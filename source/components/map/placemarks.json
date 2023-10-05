@@ -1,0 +1,34 @@
+{
+  "STATUS" : "Y",
+  "DATA" : [{
+        "lat": 55.751572,
+        "lon": 37.573855,
+        "icon": "/components/map/images/pointer.svg",
+        "href": "/shops/shop-detail/",
+        "img": "/upload/catalog.detail/14.jpg",
+        "heading": "ТРЦ Тройка"
+    }, {
+        "lat": 55.741570,
+        "lon": 37.573854,
+        "icon": "/components/map/images/pointer.svg",
+        "href": "/shops/shop-detail/",
+        "img": "/upload/catalog.detail/13.jpg",
+        "heading": "ТРЦ Длинное предлинное название"
+    },
+    {
+        "lat": 55.781571,
+        "lon": 37.573856,
+        "icon": "/components/map/images/pointer.svg",
+        "href": "/shops/shop-detail/",
+        "img": "/upload/catalog.detail/12.jpg",
+        "heading": "ТРЦ Мойка"
+    }, {
+        "lat": 55.781573,
+        "lon": 37.513853,
+        "icon": "/components/map/images/pointer.svg",
+        "href": "/shops/shop-detail/",
+        "img": "/upload/catalog.detail/11.jpg",
+        "heading": "ТРЦ Галерея"
+    }
+  ]
+}

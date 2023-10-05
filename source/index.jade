@@ -1,0 +1,130 @@
+extends ./layouts/main.jade
+
+block title
+  title Main page | seller
+
+block content
+
+  .container-fluid
+    
+    hr.i-size-L
+    hr.i-size-L
+    hr.i-size-L
+    
+    h1 Seller
+    
+    h2 GUI
+    ul
+      li
+        a( href="/gui/h1-h6/" ) Заголовки h1-h6
+    
+    h2 Каталог
+    ul
+      li
+        a( href="/catalog/" ) Catalog
+      li
+        a( href="/catalog/?sort=search" ) Catalog (результаты поиска, скролл)
+      li
+        a( href="/catalog/landing-page/?sort=search" ) Catalog landing page (по результатам поиска, без скролла)
+      li
+        a( href="/catalog/detail/" ) Catalog detail
+      li
+        a( href="/catalog/detail-empty/" ) Catalog detail без ТП
+      li
+        a( href="/catalog/catalog-filter/" ) Catalog filter
+    
+    h2 Магазины
+    ul
+      li
+        a( href="/shops/" ) Магазины без фона
+      li
+        a( href="/shops/shops-bg/" ) Магазины с фоном
+      li
+        a( href="/shops/shops-map/" ) Магазины на карте
+      li
+        a( href="/shops/shop-detail/" ) Магазин детально
+        
+    h2 Другие страницы
+    ul
+      li
+        a( href="/lookbook/" ) Lookbook
+      li
+        a( href="/lookbook/detail/" ) Lookbook detail
+      li
+        a( href="/personal/cart/" ) Моя корзина
+      li
+        a( href="/personal/cart-compact/" ) Моя корзина (compact version)
+      li
+        a( href="/personal/cart/make/" ) Подтверждение заказа
+      li
+        a( href="/instagram/" ) Instagram
+      li
+        a( href="/actions/" ) Акции
+      li
+        a( href="/search/" ) Выпадающий список поиска
+      li
+        a( href="/search/result/" ) Результаты поиска
+      li
+        a( href="/stories/" ) Stories
+        
+    h2 Блоки
+    ul
+      li
+        a( href="/blocks/catalogue-tabs/" ) Вкладки с товарами (components/catalogue-tabs/)
+      li
+        a( href="/blocks/banners/" ) Баннеры на главной
+      li
+        a( href="/blocks/top-banner/" ) Топ баннер
+      li
+        a( href="/blocks/brands/" ) Бренды
+      li
+        a( href="/blocks/catalog-recommend/" ) С этим товаром рекомендуем
+      li
+        a( href="/blocks/video/" ) Видео-баннер
+      li
+        a( href="/blocks/video/plyr/" ) Video Plyr Youtube
+      li
+        a( href="/blocks/marquee/" ) Бегущая строка
+      li
+        a( href="/blocks/big-gallery/" ) Главный баннер
+      li
+        a( href="/blocks/catalog-section-block/" ) Разделы каталога
+        
+    h2 Шапки
+    ul
+      li
+        a( href="/headers/1_6_0_0/" ) 1_6_0_0
+      li
+        a( href="/headers/1_6_0_1/" ) 1_6_0_1
+      li
+        a( href="/headers/1_6_0_2/" ) 1_6_0_2
+      li
+        a( href="/headers/1_6_0_3/" ) 1_6_0_3
+      li
+        a( href="/headers/icons/" ) Иконки
+        
+    h2 Формы
+    ul
+      li
+        a( href="/forms/auth/" ) Авторизация
+      li
+        a( href="/forms/reg/" ) Регистрация
+      li
+        a( href="/forms/forgot-password/" ) Восстановление пароля
+      li
+        a( href="/forms/catalog-detail-comment/" ) Товар - Отзыв к товару
+      li
+        a( href="/forms/catalog-detail-buy/" ) Товар - Купить в 1 клик
+      li
+        a( href="/forms/cart/" ) Скидка в корзине
+      li
+        a( href="/forms/order/" ) Оформление заказа
+      li
+        a( href="/forms/contacts/" ) Контакты
+      li
+        a( href="/forms/personal/" ) Личный кабинет
+      li
+        a( href="/forms/personal-cancel/" ) Личный кабинет - Отмена заказа <span style="color: red;">(оформить)</span>
+      li
+        a( href="/forms/search/" ) Результаты поиска <span style="color: red;">(оформить)</span>
+        

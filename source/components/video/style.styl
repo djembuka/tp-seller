@@ -1,0 +1,41 @@
+@import '../../styl/component-include.styl'
+
+.b-video-element
+  height 550px
+  position relative
+  overflow hidden
+
+  video
+    position absolute
+    top 0
+    left 0
+    min-width 100%
+    min-height 100%
+    opacity 1
+    transition( opacity 2s ease )
+    z-index 1
+    
+    &.i-hide
+      opacity 0
+
+  &__shutter
+    position absolute
+    top 0
+    left 0
+    width 100%
+    height 100%
+    color #fff
+    display flex
+    align-items center
+    background rgba(0, 0, 0, 0.2)
+    z-index 3
+
+  &__container
+      opacity 0
+      transition( opacity .5s ease )
+      color #fff
+      font-size 22pt
+      padding 5%
+      
+      &.i-show
+        opacity 1

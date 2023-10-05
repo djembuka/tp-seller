@@ -1,0 +1,46 @@
+extends ../../layouts/main.jade
+
+block title
+  title Видео-баннер | Seller
+
+block content
+
+  .container-fluid
+  
+    hr.visible-xs-block.i-size-L
+  
+    ol.breadcrumb.hidden-xs
+      li
+        a(href='/', title='Главная страница') Главная страница
+      li
+        span Видео-баннер
+
+  .container-fluid
+    
+    h1 Видео-баннер
+    
+    ul
+      li
+        a( href="/blocks/video/loop/" ) Простое видео
+      li
+        a( href="/blocks/video/fade-loop/" ) Fade эффект
+      li
+        a( href="/blocks/video/gallery/" ) Галерея
+      li
+        a( href="/blocks/video/gallery-fade-loop/" ) Галерея с fade эффектом
+    
+    hr.i-size-L
+    
+    ul
+      li Видео-баннер может быть слайдом в галерее
+      li Автозапуск
+      li Превью до загрузки видео
+      li Звука нет
+      li Видео только локальное
+      li Надписи поверх видео
+      li Маска для затемнения
+      li Подумать над плавным переходом от конца видео до начала
+      li Loop
+      
+          
+          

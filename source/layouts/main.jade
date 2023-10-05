@@ -1,0 +1,33 @@
+block vars
+  - var page = 'main'
+
+doctype html
+html( lang="ru" class="bx-no-touch" )
+  head
+    block title
+      title seller
+      
+    include includes/meta.jade
+    link( href="/template/placeholders/#{page}.css" rel="stylesheet" )
+    
+    include includes/styles.jade
+    include includes/fonts.jade
+    include includes/scripts.jade
+    
+  body
+  
+    block header
+      include ../components/header_1_6_0_1/template
+    
+    include ../components/tuner/template
+    
+    
+    block content
+      h1 seller
+    
+    include ../modules/float-phone/include
+    include includes/footer.jade
+    
+    include includes/counters.jade
+    
+    link( rel="stylesheet" href="/template/colors.css" )

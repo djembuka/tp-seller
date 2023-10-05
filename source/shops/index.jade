@@ -1,0 +1,26 @@
+﻿extends ../layouts/main.jade
+
+block title
+  title Shops | Seller
+
+block content
+
+  .container-fluid
+    
+    hr.visible-xs-block.i-size-L
+  
+    ol.breadcrumb.hidden-xs
+      li
+        a(href='/', title='Главная') Главная
+      li
+        span Магазины без фона
+
+  include ../components/shops/template
+
+  hr
+
+  include ../components/shops/brands
+
+  hr
+
+  include ../components/brands/template

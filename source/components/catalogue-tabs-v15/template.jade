@@ -8,8 +8,22 @@ script( src="/components/catalogue-tabs-v15/script.js" )
   // Nav tabs
   ul.nav.nav-tabs(role='tablist')
         
-  .tab-content
-    #recommend-0.tab-pane.active( data-tab="Рекомендуем" )
+  .tab-content        
+    #new-1.tab-pane( data-tab="Новинка" )
+      .bx_catalog_top_home
+      
+        include ../../components/catalog.collection/template-4
+        hr.i-size-XL
+        include ../../components/catalog.collection/template-4
+        
+    #hit-1.tab-pane( data-tab="Хит" )
+      .bx_catalog_top_home
+      
+        include ../../components/catalog.collection/template-4
+        hr.i-size-XL
+        include ../../components/catalog.collection/template-4
+
+    #recommend-1.tab-pane.active( data-tab="Рекомендуем мужчинам" )
       .bx_catalog_top_home
       
         include ../../components/catalog.collection/meta
@@ -18,21 +32,16 @@ script( src="/components/catalogue-tabs-v15/script.js" )
         hr.i-size-XL
         include ../../components/catalog.collection/template-4
         
-    #new-0.tab-pane( data-tab="Новинки" )
+    #recommend-2.tab-pane( data-tab="Рекомендуем женщинам" )
       .bx_catalog_top_home
       
+        include ../../components/catalog.collection/meta
+        
         include ../../components/catalog.collection/template-4
         hr.i-size-XL
         include ../../components/catalog.collection/template-4
         
-    #hit-0.tab-pane( data-tab="Хит продаж" )
-      .bx_catalog_top_home
-      
-        include ../../components/catalog.collection/template-4
-        hr.i-size-XL
-        include ../../components/catalog.collection/template-4
-        
-    #sales-0.tab-pane( data-tab="Акции" )
+    #sales-1.tab-pane( data-tab="Акции" )
       .bx_catalog_top_home
       
         include ../../components/catalog.collection/template-4

@@ -2,6 +2,20 @@
 
 .bj-catalogue-tabs.i-v15
 
+  @media(max-width 1023px)
+    position relative
+
+    &:before
+        content ''
+        display block
+        height 8px
+        background #fff
+        position absolute
+        top 29px
+        left 0
+        width 100%
+        z-index 10
+
   .nav-tabs
     border none
     margin-bottom 20px
@@ -44,7 +58,12 @@
         a:blur
           opacity 1 !important
             
-    @media( max-width 767px )
+    @media( max-width 1023px )
+      overflow-x auto
+      padding-bottom 7px
+      position relative
+            
+    @media( max-width 1023px )
       
       > li
         padding-right 14px

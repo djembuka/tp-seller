@@ -1,0 +1,224 @@
+@import '../../styl/component-include.styl'
+
+#twpxMobileMenu {
+  background-color: #f2f2f2;
+  font-size: 14px
+}
+
+#twpxMobileMenu a {
+  transition: color;
+  -webkit-transition: color;
+  -webkit-transition: color .3s ease;
+  text-decoration: none
+}
+
+.ob-search-result {
+  background: #fff;
+  padding: 20px 35px;
+  box-shadow: 0 3px 20px rgba(0, 0, 0, 0.102);
+  position: absolute;
+  width: 100%;
+  z-index: 1000
+}
+
+@media (min-width:1025px) {
+  #twpxMobileMenu,
+  #toggleTwpxMobileMenu {
+    display: none
+  }
+}
+
+@media (max-width:1024px) {
+  #twpxMobileMenu .twpx-mobile-menu {
+    padding: 0 !important;
+    margin: 0 !important;
+    overflow: hidden
+  }
+
+  #twpxMobileMenu .twpx-mobile-menu__block {
+    display: none
+  }
+
+  #twpxMobileMenu .twpx-mobile-menu__link {
+    display: block;
+    height: 58px;
+    line-height: 58px;
+    background: #fff;
+    margin-bottom: 1px;
+    padding: 0 24px;
+    font-size: 15px;
+    position: relative
+  }
+
+  #twpxMobileMenu .twpx-mobile-menu__link:focus,
+  #twpxMobileMenu .twpx-mobile-menu__link:hover,
+  #twpxMobileMenu .twpx-mobile-menu__link:active {
+    opacity: 1
+  }
+
+  #twpxMobileMenu a.twpx-mobile-menu__link {
+    transition: all;
+    -webkit-transition: all;
+    -webkit-transition: all .3s ease
+  }
+
+  #twpxMobileMenu .twpx-mobile-menu__link:not(.i-link):after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 24px;
+    right: 25px;
+    width: 8px;
+    height: 8px;
+    border: 2px solid #000;
+    border-right: 0;
+    border-bottom: 0;
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+    transition: opacity;
+    -webkit-transition: opacity;
+    -webkit-transition: opacity .3s ease;
+    z-index: 1
+  }
+
+  #twpxMobileMenu .twpx-mobile-menu__link:not(.i-link):before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 24px;
+    left: 25px;
+    width: 8px;
+    height: 8px;
+    border: 2px solid #000;
+    border-right: 0;
+    border-bottom: 0;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    opacity: 0;
+    transition: opacity;
+    -webkit-transition: opacity;
+    -webkit-transition: opacity .3s ease;
+    z-index: 1
+  }
+
+  #twpxMobileMenu .twpx-mobile-menu__link span {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    height: auto;
+    line-height: normal;
+    opacity: 0;
+    transition: opacity;
+    -webkit-transition: opacity;
+    -webkit-transition: opacity .3s ease;
+    color: #fff;
+    z-index: 1
+  }
+
+  #twpxMobileMenu .twpx-mobile-menu__link i {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+    margin-top: -2px;
+    width: 16px;
+    height: 16px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain
+  }
+
+  #twpxMobileMenu .twpx-mobile-menu__item.active .twpx-mobile-menu__link {
+    padding-left: 67px
+  }
+
+  #twpxMobileMenu .twpx-mobile-menu__item.active .twpx-mobile-menu__link:after {
+    opacity: 0
+  }
+
+  #twpxMobileMenu .twpx-mobile-menu__item.active .twpx-mobile-menu__link:before {
+    opacity: 1
+  }
+
+  #twpxMobileMenu .twpx-mobile-menu__item.active .twpx-mobile-menu__link span {
+    opacity: 1;
+    z-index: 10
+  }
+
+  #twpxMobileMenu .twpx-mobile-menu-sub {
+    display: none;
+    margin-bottom: 1px;
+    max-height: 395px;
+    overflow-y: auto
+  }
+
+  #twpxMobileMenu .twpx-mobile-menu-sub__title,
+  #twpxMobileMenu .twpx-mobile-menu-sub__item {
+    display: block;
+    height: 35px;
+    padding-left: 67px;
+    font-size: 15px;
+    background: #fff;
+    box-sizing: content-box
+  }
+
+  #twpxMobileMenu .twpx-mobile-menu-sub :first-child {
+    text-transform: none;
+    padding-top: 20px
+  }
+
+  #twpxMobileMenu .twpx-mobile-menu-sub__item:last-child {
+    padding-bottom: 20px
+  }
+}
+
+@media (min-width:1025px) {
+  #twpxMobileMenu .twpx-mobile-menu {
+    display: flex;
+    height: 64px
+  }
+
+  #twpxMobileMenu .twpx-mobile-menu__item {
+    height: 64px;
+    line-height: 64px;
+    padding: 0 24px
+  }
+
+  #twpxMobileMenu .twpx-mobile-menu-sub,
+  #twpxMobileMenu .twpx-mobile-menu__title,
+  #twpxMobileMenu .twpx-mobile-menu__link span {
+    display: none
+  }
+
+  #twpxMobileMenu .twpx-mobile-menu__block {
+    display: flex
+  }
+}
+
+@media (max-width:419px) {
+
+  #twpxMobileMenu .twpx-mobile-menu__title a,
+  #twpxMobileMenu .twpx-mobile-menu__link {
+    padding: 0 12px
+  }
+
+  #twpxMobileMenu .twpx-mobile-menu__link:after,
+  #twpxMobileMenu .twpx-mobile-menu__link span {
+    right: 13px
+  }
+
+  #twpxMobileMenu .twpx-mobile-menu__sandwich-icon {
+    margin-right: 13px
+  }
+
+  #twpxMobileMenu .twpx-mobile-menu__link:before {
+    left: 25px
+  }
+
+  #twpxMobileMenu a.twpx-mobile-menu__link:hover,
+  #twpxMobileMenu a.twpx-mobile-menu__link:focus {
+    opacity: 1
+  }
+}

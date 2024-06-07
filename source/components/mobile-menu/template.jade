@@ -1,0 +1,26 @@
+﻿// start /components/mobile-menu/
+
+link( rel="stylesheet", href="/components/mobile-menu/style.css" )
+script( src="/components/mobile-menu/script.js" )
+
+h1 Мобильное меню
+
+p Кнопка для отображения мобильного меню показывается только на разрешении меньше или равном 1024px.
+
+p При заходе на страницу с desktop (ширина окна больше 1024px), мобильное меню не подгружается.
+
+p При заходе на страницу с mobile (ширина окна меньше или равна 1024px) или при уменьшении ширины окна до 1024px и меньше, подгружается мобильное меню и навешиваются все нужные события.
+
+h3 Подключение
+
+p Для подключения на страницу нужно создать кнопку вызова с id="toggleTwpxMobileMenu", обёртку с id="twpxMobileMenu" и базовые элементы (см. код на этой странице). У элемента #twpxMobileMenu нужно указать data-url, по которому будет происходить загрузка мобильного меню. 
+
+p Далее нужно подключить стили и скрипты компонента mobile-menu.
+
+button#toggleTwpxMobileMenu Toggle mobile menu
+
+#twpxMobileMenu(data-url="/components/mobile-menu/response.html")
+	.twpx-mobile-menu
+		.twpx-mobile-menu__title
+
+// end /components/mobile-menu/
